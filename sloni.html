@@ -4,33 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Слоны</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<script src="less.js"></script>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<div class="name_logo">
-			<div class="header_name"><a class="link_header" href="index.html"><h1 class="main_header" title="На главную">Виртуальная галерея картин Сальвадора Дали</h1></a></div>
-			<div class="header_logo">
-				<a href="index.html"><img class="header_picture" src="./img/salvador_dali_header.jpg" alt="picture_for_header"  title="На главную"></a>
-			</div>
-			</div>
+			<a class="link_header" href="index.html"><h1 class="main_header" title="Главная страница">Виртуальная галерея картин Сальвадора Дали</h1></a>
+			<a href="index.html"><img class="header_picture" src="./img/salvador_dali_header.jpg" alt="picture_for_header"  title="Главная страница"></a>
 			<div id="navigation">
-				<a class="nav-link" href="about.html">О художнике</a>
-				<div class="dropdown">
-					<a class="nav-link" href="index.html#content">Другие картины</a>
-					<div class="dropdown-content">
-						<a href="sheya.html">"Шея"</a>
-						<a href="germes.html">"Гермес"</a>
-						<a href="lico_voyni.html">"Лицо войны"</a>
-						<a href="vremya.html">"Время"</a>
-						<a href="lodka.html">"Лодка"</a>
-						<a href="may_west.html">"Мэй Уэст"</a>
-						<a href="gala.html">"Гала с носорогическими признаками"</a>
-					</div>
-					</div>
-         		<a class="nav-link" href="online-shop.html">Онлайн-магазин</a>
-         		<a class="nav-link" href="contact.html">Контакты</a>
+				<ul class="menu">
+					<li><a href="about.html">О художнике</a></li>
+					<div class="dropdown">
+						<li><a href="index.html#content">Другие картины</a></li>
+						<div class="dropdown-content">
+							<a href="germes.html">"Гермес"</a>
+							<a href="sheya.html">"Шея"</a>
+							<a href="lico_voyni.html">"Лицо войны"</a>
+							<a href="vremya.html">"Время"</a>
+							<a href="lodka.html">"Лодка"</a>
+							<a href="may_west.html">"Мэй Уэст"</a>
+							<a href="gala.html">"Гала с носорогическими признаками"</a>
+						</div>
+						</div>
+					<li><a href="online-shop.html">Онлайн-магазин</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+				<div class="menu1">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+					<label for="burger-checkbox" class="burger"></label>
+					<ul class="menu1-list">
+						<li><a href="about.html" class="menu1-item">О художнике</a><li>
+						<li><a href="index.html#content" class="menu1-item">Другие картины</a><li>
+						<li><a href="online-shop.html" class="menu1-item">Онлайн-магазин</a><li>
+						<li><a href="contact.html" class="menu1-item">Контакты</a><li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="content">
@@ -46,10 +55,10 @@
 
 		</div>
 		<div id="footer">
-			<div class="instagram_logo"><a class="our_insta" href="https://www.instagram.com/galinakutash/"><img src="./icons/insta_logo.png" alt="instagram_icon" class="insta"><p class="insta_text">Our instagram</p></a></div>
-			<div class="telegram_logo"><a class="our_telegram" href="https://t.me/system_glitch"><img src="./icons/telega_icon.png" alt="telegram_icon" class="telegram"><p class="telega_text">Our telegram</p></a></div>
-			<div class="phone_logo"><a class="our_phone" href="#"><img src="./icons/phone_icon.png" alt="phone_icon" class="phone"><p class="phone_text">+375 29-284-11-48</p></a></div>
-		</div>
+			<div class="instablock"><a class="our_insta" href="https://www.instagram.com/galinakutash/"><img src="./icons/insta_logo.png" alt="instagram_icon" class="insta"><p class="insta_text">Our instagram</p></a></div>
+			<div class="telegramblock"><a class="our_telegram" href="https://t.me/system_glitch"><img src="./icons/telega_icon.png" alt="telegram_icon" class="telegram"><p class="telega_text">Our telegram</p></a></div>
+			<div class="phoneblock"><img src="./icons/phone_icon.png" alt="phone_icon" class="phone"><p class="phone_text">+375 29-284-11-48</p></div>
+	</div>
 	</div>
 </body>
 </html>

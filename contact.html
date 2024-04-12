@@ -3,43 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<script src="less.js"></script>
 	<title>Контакты</title>
-</head>
-<body>
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Salvador</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<div class="name_logo">
-			<div class="header_name"><a class="link_header" href="index.html"><h1 class="main_header" title="На главную">Виртуальная галерея картин Сальвадора Дали</h1></a></div>
-			<div class="header_logo">
-				<a href="index.html"><img class="header_picture" src="./img/salvador_dali_header.jpg" alt="picture_for_header"  title="На главную"></a>
-			</div>
-			</div>
+			<a class="link_header" href="index.html"><h1 class="main_header" title="Главная страница">Виртуальная галерея картин Сальвадора Дали</h1></a>
+			<a href="index.html"><img class="header_picture" src="./img/salvador_dali_header.jpg" alt="picture_for_header"  title="Главная страница"></a>
 			<div id="navigation">
-				<a class="nav-link" href="about.html">О художнике</a>
-				<div class="dropdown">
-					<a class="nav-link" href="index.html#content">Картины</a>
-					<div class="dropdown-content">
-						<a href="sheya.html">"Шея"</a>
-						<a href="sloni.html">"Слоны"</a>
-						<a href="lico_voyni.html">"Лицо войны"</a>
-						<a href="vremya.html">"Время"</a>
-						<a href="lodka.html">"Лодка"</a>
-						<a href="may_west.html">"Мэй Уэст"</a>
-						<a href="gala.html">"Гала с носорогическими признаками"</a>
-						<a href="germes.html">"Гермес"</a>
-					</div>
-					</div>
-         		<a class="nav-link" href="online-shop.html">Онлайн-магазин</a>
-         		<a class="nav-link" href="#footer">Контакты</a>
+				<ul class="menu">
+					<li><a href="about.html">О художнике</a></li>
+					<div class="dropdown">
+						<li><a href="index.html#content">Картины</a></li>
+						<div class="dropdown-content">
+							<a href="sheya.html">"Шея"</a>
+							<a href="germes.html">"Гермес"</a>
+							<a href="sloni.html">"Слоны"</a>
+							<a href="lico_voyni.html">"Лицо войны"</a>
+							<a href="vremya.html">"Время"</a>
+							<a href="lodka.html">"Лодка"</a>
+							<a href="may_west.html">"Мэй Уэст"</a>
+							<a href="gala.html">"Гала с носорогическими признаками"</a>
+						</div>
+						</div>
+					<li><a href="online-shop.html">Онлайн-магазин</a></li>
+				</ul>
+				<div class="menu1">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+					<label for="burger-checkbox" class="burger"></label>
+					<ul class="menu1-list">
+						<li><a href="about.html" class="menu1-item">О художнике</a><li>
+						<li><a href="index.html#content" class="menu1-item">Картины</a><li>
+						<li><a href="online-shop.html" class="menu1-item">Онлайн-магазин</a><li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="content">
@@ -47,13 +46,15 @@
 			admin@sdali.by — по вопросам относительно сайта, рекомендации и  предложения по поводу развития проекта.<br>
 			reklama@sdali.by — по вопросам размещения рекламы на сайте.<br>
 			<b>Основной офис находится по адресу: Беларусь, г.Минск  ул. Одинцова, 28.</b></p>
+			<div class="map-container">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.041423086751!2d-73.98604968460234!3d40.75603787932844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259c9f2b291f5%3A0x5bda591b1f2b6f62!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635241404885!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
 		</div>
 
 		<div id="footer">
-			<div class="instagram_logo"><a class="our_insta" href="https://www.instagram.com/galinakutash/"><img src="./icons/insta_logo.png" alt="instagram_icon" class="insta"><p class="insta_text">Our instagram</p></a></div>
-			<div class="telegram_logo"><a class="our_telegram" href="https://t.me/system_glitch"><img src="./icons/telega_icon.png" alt="telegram_icon" class="telegram"><p class="telega_text">Our telegram</p></a></div>
-			<div class="phone_logo"><a class="our_phone" href="#"><img src="./icons/phone_icon.png" alt="phone_icon" class="phone"><p class="phone_text">+375 29-284-11-48</p></a></div>
+			<div class="instablock"><a class="our_insta" href="https://www.instagram.com/galinakutash/"><img src="./icons/insta_logo.png" alt="instagram_icon" class="insta"><p class="insta_text">Our instagram</p></a></div>
+			<div class="telegramblock"><a class="our_telegram" href="https://t.me/system_glitch"><img src="./icons/telega_icon.png" alt="telegram_icon" class="telegram"><p class="telega_text">Our telegram</p></a></div>
+			<div class="phoneblock"><img src="./icons/phone_icon.png" alt="phone_icon" class="phone"><p class="phone_text">+375 29-284-11-48</p></div>
 	</div>
 		</div>
 </body>
