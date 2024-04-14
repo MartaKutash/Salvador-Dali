@@ -27,6 +27,7 @@
 	color: @content_color;
 	font-size: 16px;
 	width: 1100px;
+	max-width: 100%;
 }
 
 .footer_block {
@@ -73,7 +74,7 @@ body {
 		.header_picture {
 			width: 80px;
 			height: 80px;
-			max-width: 100%;
+			width: 100%;
 			transition: transform 0.5s;
 			border: 2px solid rgba(125, 125, 128, 0.5);
 			border-radius: 10px;
@@ -378,7 +379,6 @@ body {
 	z-index: 1;
 	cursor: pointer;
 	display: block;
-	position: relative;
 	border: none;
 	background: transparent;
 	width: 40px;
@@ -461,7 +461,7 @@ body {
 	#navigation {
 		margin-bottom: -20px;
 		color: @footer_color;
-		margin-top: 150px;
+		margin-top: 350px;
 	}
 
 	.link_header {
@@ -481,12 +481,17 @@ body {
 
 	}
 
+	.picture_link {
+		float: left;
+	}
+
 	.menu1 {
 		display: block;
 	}
 
 	.menu li {
 		display: none;
+
 	}
 
 
@@ -507,10 +512,57 @@ body {
 		font-size: 12px;
 	}
 
-	#content {
+	#container {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
 
+	.picture_sheya {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.picture_germes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.picture_sloni {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.picture_lico {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.picture_vremya {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.picture_lodka {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.picture_west {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.picture_gala {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 	#footer {
 		display: flex;
 		flex-direction: row;
@@ -527,22 +579,17 @@ body {
 		display: none;
 	}
 
-	.burger {
-		position: relative;
-		z-index: 1;
-		cursor: pointer;
-		display: block;
-		position: relative;
-		border: none;
-		background: transparent;
-		width: 10px;
-		height: 6px;
-	  }
+	.menu1-list {
+		width: 280px;
+		height: 750px;
+	}
+
+	.notification {
+		padding: 50px;
+		font-size: 16px;
+	}
 }
 
-/*@media (min-width: 650px) and (max-width: 1366px) {
-
-}*/
 
 
 
