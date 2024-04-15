@@ -54,7 +54,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 	#header {
-		height: 280px;
+		height: 300px;
 		background-image: url('./img/metamorfozi.webp');
 		background-size: cover;
 		background-position: calc(0);
@@ -87,7 +87,7 @@ body {
 		#navigation {
 			background-color: @footer_back;
 			height: 65px;
-			margin-top: 100px;
+			margin-top: 120px;
 			width: 100%;
 			.menu {
 				display: flex;
@@ -450,9 +450,7 @@ body {
   }
 
 
-@maxWidth: 650px;
-
-@media screen and (max-width: @maxWidth) {
+@media screen and (max-width: 650px) {
 
 	.header_picture {
 		display: none;
@@ -588,6 +586,38 @@ body {
 		padding: 50px;
 		font-size: 16px;
 	}
+}
+
+@media (min-width: 651px) and (max-width: 1200px) {
+	.header_picture {
+		width: 1px;
+		height: 1px;
+		width: 10%;
+			transition: transform 0.5s;
+			border: 2px solid rgba(125, 125, 128, 0.5);
+			border-radius: 1px;
+			top: 0px;
+			left: 0px;
+	}
+
+	.header_picture1 {
+		width: 10%;
+		width: 70px;
+		height: 30px;
+		margin-left: 10px;
+	}
+
+	#navigation {
+		background-color: @footer_back;
+		height: 150px;
+		margin-bottom: -50px;
+
+	}
+
+	.link_header {
+		font-size: 10px;
+	}
+
 }
 
 
